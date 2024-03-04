@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "type-check": "pnpm tsc",
-    "lint": "pnpm next lint && pnpm run lint:md",
+    "lint": "pnpm vite lint && pnpm run lint:md",
     "lint:md": "pnpm markdownlint --ignore-path .gitignore . --config ./markdownlint-config.js",
     "lint:md:fix": "pnpm markdownlint --fix --ignore-path .gitignore . --config ./markdownlint-config.js",
     "format": "pnpm prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\""
